@@ -17,10 +17,12 @@ public class Nim {
             } else {
                 if ((n - 1) % 3 == 0) {
                     nim(n - 1, -player);
+                    nim(n-4, -player);
                 } else if ((n - 2) % 3 == 0) {
                     nim(n - 2, -player);
                 } else if((n-4) % 3 == 0) {
                     nim(n-4, -player);
+                    nim(n-1, -player);
                 } else {
                     nim(n - 1, -player);
                     nim(n - 2, -player);
